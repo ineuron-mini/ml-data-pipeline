@@ -1,17 +1,24 @@
 
 import os
+from src.Credential.CREDENTIAL import SECURITY_PROTOCOL, SSL_MACHENISM
+from src.Credential.CREDENTIAL import API_KEY, API_SECRET_KEY, BOOTSTRAP_SERVER
+from src.Credential.CREDENTIAL import ENDPOINT_SCHEMA_URL, SCHEMA_REGISTRY_API_KEY, SCHEMA_REGISTRY_API_SECRET
 
+# # Authentication Related Variables
+# SECURITY_PROTOCOL=""  #(SASL = simple authenticator security level) this allow us to connect with server securily
+# SSL_MACHENISM=""
+# # SECURITY_PROTOCOL = os.getenv('SECURITY_PROTOCOL',None)
+# # SSL_MACHENISM = os.getenv('SSL_MACHENISM',None)
 
-SECURITY_PROTOCOL="SASL_SSL"
-SSL_MACHENISM="PLAIN"
-API_KEY = os.getenv('API_KEY',None)
-ENDPOINT_SCHEMA_URL  = os.getenv('ENDPOINT_SCHEMA_URL',None)
-API_SECRET_KEY = os.getenv('API_SECRET_KEY',None)
-BOOTSTRAP_SERVER = os.getenv('BOOTSTRAP_SERVER',None)
-SECURITY_PROTOCOL = os.getenv('SECURITY_PROTOCOL',None)
-SSL_MACHENISM = os.getenv('SSL_MACHENISM',None)
-SCHEMA_REGISTRY_API_KEY = os.getenv('SCHEMA_REGISTRY_API_KEY',None)
-SCHEMA_REGISTRY_API_SECRET = os.getenv('SCHEMA_REGISTRY_API_SECRET',None)
+# # Cloud api details
+# API_KEY = "" #os.getenv('API_KEY',None)
+# API_SECRET_KEY = "" #os.getenv('API_SECRET_KEY',None)
+# BOOTSTRAP_SERVER = "" #os.getenv('BOOTSTRAP_SERVER',None)
+
+# # Schema Related variables
+# ENDPOINT_SCHEMA_URL  = ""  #os.getenv('ENDPOINT_SCHEMA_URL',None)
+# SCHEMA_REGISTRY_API_KEY = "" #os.getenv('SCHEMA_REGISTRY_API_KEY',None)
+# SCHEMA_REGISTRY_API_SECRET = "" #os.getenv('SCHEMA_REGISTRY_API_SECRET',None)
 
 
 def sasl_conf():

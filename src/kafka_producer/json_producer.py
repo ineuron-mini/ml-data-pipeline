@@ -82,7 +82,8 @@ def product_data_using_file(topic,file_path):
     try:
         for instance in Generic.get_object(file_path=file_path):
             print(instance)
-            producer.produce(topic=topic,
+             # Here comes a error due to not having a library called json schema
+            producer.produce(topic=topic,  
                              key=string_serializer(str(uuid4()), instance.to_dict()),
                              value=json_serializer(instance, SerializationContext(topic, MessageField.VALUE)),
                              on_delivery=delivery_report)

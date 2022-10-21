@@ -46,7 +46,7 @@ class Generic:
             fields.append(
                         {
                         "name": f"{column}",
-                        "type": "string",
+                        "type": "string",  # in real case this can be set manually for type of data in column
                         "doc": "The string type."  
                         }
             )
