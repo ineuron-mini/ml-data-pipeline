@@ -22,3 +22,8 @@ Step4:
 pip install -r requirements.txt
 ```
 
+--
+## add ./credential in .gitignore
+## Add a "credential" folder init "CREDENTIAL.py" file and store all secrets in it
+
+--
