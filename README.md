@@ -22,7 +22,6 @@ Step4:
 pip install -r requirements.txt
 ```
 
-<<<<<<< HEAD
 --
 ## add ./credential in .gitignore
 ## Add a "credential" folder init "CREDENTIAL.py" file and store all secrets in it
@@ -79,4 +78,3 @@ Run docker image
 ```
 docker run -it -v $(pwd)/logs:/logs  --env-file=$(pwd)/.env data-pipeline:lts
 ```
->>>>>>> b1afe3a4efba0702a176349f67e7dd5c544f26c8
